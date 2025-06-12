@@ -21,7 +21,7 @@ This repository contains a Flask-based microservice for a simple e-commerce cart
 ### 1. Clone the repository
 
 ```bash
-git clone https://your.git.host/your-org/cart-api.git
+git clone https://github.com/novalyze/backend-assessment-cart/
 cd cart-api
 ```
 
