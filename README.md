@@ -101,9 +101,9 @@ This launches:
 6. **Test endpoints**
 
    ```bash
-   curl [http://localhost:5000/health](http://localhost:5000/health)
-   curl [http://localhost:5000/health/db](http://localhost:5000/health/db)
-   curl [http://localhost:5000/api/products](http://localhost:5000/api/products)
+   curl [http://localhost:3003/health](http://localhost:3003/health)
+   curl [http://localhost:3003/health/db](http://localhost:3003/health/db)
+   curl [http://localhost:3003/api/products](http://localhost:3003/api/products)
    ```
 
 ## Assessment Tasks
