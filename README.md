@@ -22,7 +22,7 @@ This repository contains a Flask-based microservice for a simple e-commerce cart
 
 ```bash
 git clone https://github.com/novalyze/backend-assessment-cart/
-cd cart-api
+cd backend-assessment-cart
 ```
 
 ### 2. Development with Docker
