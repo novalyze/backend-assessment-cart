@@ -30,7 +30,7 @@ cd backend-assessment-cart
 1. **Build and start services**
 
    ```bash
-   docker-compose up --build -d
+   docker-compose up --build
    ```
 
 This launches:
