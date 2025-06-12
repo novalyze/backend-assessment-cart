@@ -1,0 +1,39 @@
+# docker-compose.yml
+version: "3.8"
+services:
+  db:
+    image: postgres:15
+    ports:
+      - "5433:5432"
+    restart: always
+    environment:
+      FLASK_APP: run.py
+      FLASK_ENV: development
+      DATABASE_URL: postgresql://username:password@db:5432/cartdb
+      SQLALCHEMY_DATABASE_URI: postgresql://username:password@db:5432/cartdb
+      POSTGRES_USER: username
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: cartdb
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U username -d cartdb"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  api:
+    build: .
+    restart: on-failure
+    env_file: 
+      - .env
+    depends_on:
+      db:
+        condition: service_healthy
+    ports:
+      - "3003:3003"
+    volumes:
+      - .:/app    # optional: live-reload during development
+
+volumes:
+  pgdata:
