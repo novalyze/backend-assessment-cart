@@ -115,8 +115,8 @@ Candidates should implement the following endpoints (stubs are provided in `app/
 - `POST /api/cart/`
 - `POST /api/cart/submit`
 
-- **Products List** (`app/routes/products.py`)
-- `GET /api/products` (completed, uses `Product.get_all()`)
+** Create a user table and link the table to the carts table **
+- Here you need to create a new table model, a database migration script for it and adjust the existing endpoints to accomodate a 'user_id' input field
 
 The goal is to demonstrate:
 
