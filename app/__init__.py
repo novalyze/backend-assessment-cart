@@ -18,7 +18,7 @@ def create_app():
         app,
         resources={
             r"/*": {
-                "origins": ["http://localhost:4000"],
+                "origins": ["http://localhost:3003"],
                 "methods": ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"],
                 "allow_headers": ["Content-Type", "Authorization"],
                 "supports_credentials": True,
