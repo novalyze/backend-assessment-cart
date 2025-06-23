@@ -11,7 +11,7 @@ class CartResource(Resource):
     def get(self) -> Response:
         """
         GET /api/cart/
-        Return the resources (items) in all carts.
+        Return the resources (items) in given cart_id cart.
         """
         raise NotImplementedError("get_cart endpoint not implemented")
 
