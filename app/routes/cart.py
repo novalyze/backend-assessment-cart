@@ -10,7 +10,7 @@ class CartResource(Resource):
     @cart_ns.doc("get_cart")
     def get(self) -> Response:
         """
-        GET /api/cart/
+        GET /api/cart/:cart_id
         Return the resources (items) in given cart_id cart.
         """
         raise NotImplementedError("get_cart endpoint not implemented")
